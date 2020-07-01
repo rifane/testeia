@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: apiusuario
+  cloud:
+    config:
+      uri: http://192.168.1.103:8001
+      failFast: false
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/dbteste?useTimezone=true&serverTimezone=UTC&useSSL=false
+
+  jpa:
+    hibernate:
+    ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true

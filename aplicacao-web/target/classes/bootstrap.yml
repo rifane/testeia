@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: aplicacaoweb
+  cloud:
+    config:
+      uri: http://192.168.1.103:8001
+      config:
+        failFast: true
+#if you have a redis default instalation, you can put localhost or 127.0.0.1
+#if you have a redis docker container, you need to put machine ip
+  redis
+    host: localhost
+    port: 6379
+
+server:
+  port: 8085
